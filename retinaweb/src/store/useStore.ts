@@ -76,12 +76,16 @@ const useStore = create<StoreState>((set) => ({
         body: formData,
       });
 
+      const data = await response.json();
+
       if (!response.ok) {
-        throw new Error(`Server Error: ${response.statusText}`);
+        throw new Error(data?.detail || data?.error || `Server Error: ${response.statusText}`);
       }
 
-      const data = await response.json();
-      
+      if (data.error) {
+        throw new Error(data.error);
+      }
+
       if (data.predictions) {
         set({ modelResults: data.predictions, isProcessing: false });
       } else {
@@ -91,7 +95,10 @@ const useStore = create<StoreState>((set) => ({
 
     } catch (error) {
       console.error("Error analyzing image:", error);
-      alert("Failed to connect to backend. Is uvicorn running?");
+      throw error instanceof Error
+        ? error
+        : new Error("Failed to analyze image. Please try again.");
+    } finally {
       set({ isProcessing: false });
     }
   },
