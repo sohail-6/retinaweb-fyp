@@ -61,5 +61,5 @@ python app.py
 ## 👥 Contributors
 *   **Hamza Mustafa**
 *  **Sohail Hussain**
-*  **Atique ur Rehman:** 
+*  **Atique ur Rehman** 
 *  **Ahmer Ali**
