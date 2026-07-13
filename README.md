@@ -106,6 +106,34 @@ python app.py
     <tr><td><b>B – Weighted Average</b></td><td align="center">0.8728</td><td align="center"><b>0.9898</b></td><td align="center"><b>0.9433</b></td></tr>
     <tr><td><b>C – Per-Class Weighted</b></td><td align="center">0.8805</td><td align="center"><b>0.9898</b></td><td align="center">0.9431</td></tr>
     <tr><td><b>D – Stacking (Proposed)</b></td><td align="center"><b>0.8845</b></td><td align="center">0.9888</td><td align="center">0.9398</td></tr>
+    <h3>TABLE III: Per-Class Metrics for Swin-Tiny Network</h3>
+<table width="100%">
+  <thead>
+    <tr bgcolor="#f2f2f2">
+      <th align="center">Pathology Class</th>
+      <th align="left">Description</th>
+      <th align="center">Precision</th>
+      <th align="center">Recall</th>
+      <th align="center">F₁-Score</th>
+      <th align="center">AUC</th>
+      <th align="center">Test Support</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td align="center"><b>N</b></td><td>Normal Fundus</td><td align="center">0.79</td><td align="center">0.84</td><td align="center">0.81</td><td align="center">0.9590</td><td align="center">160</td></tr>
+    <tr><td align="center"><b>CAT</b></td><td>Cataract</td><td align="center">0.90</td><td align="center">0.84</td><td align="center">0.87</td><td align="center">0.9179</td><td align="center">31</td></tr>
+    <tr><td align="center"><b>G</b></td><td>Glaucoma</td><td align="center">0.92</td><td align="center">0.93</td><td align="center">0.93</td><td align="center">0.9895</td><td align="center">135</td></tr>
+    <tr><td align="center"><b>MY</b></td><td>Myopic Maculopathy</td><td align="center">0.95</td><td align="center">0.95</td><td align="center">0.95</td><td align="center">0.9925</td><td align="center">95</td></tr>
+    <tr><td align="center"><b>AMD</b></td><td>Age-related Macular Degeneration</td><td align="center">0.90</td><td align="center">0.80</td><td align="center">0.85</td><td align="center">0.9799</td><td align="center">69</td></tr>
+    <tr><td align="center"><b>ERM</b></td><td>Epiretinal Membrane</td><td align="center">0.60</td><td align="center">0.84</td><td align="center">0.70</td><td align="center">0.9677</td><td align="center">43</td></tr>
+    <tr><td align="center"><b>DR</b></td><td>Diabetic Retinopathy</td><td align="center">0.95</td><td align="center">0.93</td><td align="center">0.94</td><td align="center">0.9885</td><td align="center">120</td></tr>
+    <tr><td align="center"><b>RS</b></td><td>Retinoschisis</td><td align="center">1.00</td><td align="center">0.98</td><td align="center">0.99</td><td align="center">0.9999</td><td align="center">61</td></tr>
+    <tr><td align="center"><b>HTR</b></td><td>Hypertensive Retinopathy</td><td align="center">0.88</td><td align="center">0.85</td><td align="center">0.86</td><td align="center">0.9765</td><td align="center">84</td></tr>
+    <tr><td align="center"><b>BRVO</b></td><td>Branch Retinal Vein Occlusion</td><td align="center">0.81</td><td align="center">0.96</td><td align="center">0.88</td><td align="center">0.9996</td><td align="center">26</td></tr>
+    <tr><td align="center"><b>LS</b></td><td>Laser Scars</td><td align="center">0.95</td><td align="center">0.87</td><td align="center">0.91</td><td align="center">0.9994</td><td align="center">23</td></tr>
+  </tbody>
+</table>
+
   </tbody>
 </table>
 
