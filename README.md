@@ -63,3 +63,49 @@ python app.py
 *  **Sohail Hussain**
 *  **Atique ur Rehman** 
 *  **Ahmer Ali**
+---
+
+## 📊 Results & Experimental Performance
+
+<br />
+<hr />
+<h2>📊 Results & Experimental Performance</h2>
+
+<h3>TABLE I: Overall Performance of Base Models on Test Set</h3>
+<table width="100%">
+  <thead>
+    <tr bgcolor="#f2f2f2">
+      <th align="left">Model</th>
+      <th align="center">Macro F₁</th>
+      <th align="center">95% CI</th>
+      <th align="center">Mean AUC</th>
+      <th align="center">mAP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>ResNet-50</b></td><td align="center">0.8558</td><td align="center">0.8289 – 0.8776</td><td align="center">0.9845</td><td align="center">0.9235</td></tr>
+    <tr><td><b>DenseNet-121</b></td><td align="center">0.8455</td><td align="center">0.8181 – 0.8685</td><td align="center">0.9834</td><td align="center">0.9149</td></tr>
+    <tr><td><b>EfficientNet-B3</b></td><td align="center">0.8637</td><td align="center">0.8353 – 0.8861</td><td align="center">0.9860</td><td align="center">0.9215</td></tr>
+    <tr><td><b>ConvNeXt-Tiny</b></td><td align="center">0.8677</td><td align="center">0.8422 – 0.8913</td><td align="center">0.9823</td><td align="center">0.9215</td></tr>
+    <tr><td><b>Swin-Tiny</b></td><td align="center"><b>0.8789</b></td><td align="center"><b>0.8566 – 0.9014</b></td><td align="center"><b>0.9791</b></td><td align="center"><b>0.9403</b></td></tr>
+  </tbody>
+</table>
+
+<h3>TABLE II: Ensemble Strategies Performance Comparison</h3>
+<table width="100%">
+  <thead>
+    <tr bgcolor="#f2f2f2">
+      <th align="left">Strategy</th>
+      <th align="center">Macro F₁</th>
+      <th align="center">Mean AUC</th>
+      <th align="center">mAP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>A – Simple Average</b></td><td align="center">0.8804</td><td align="center"><b>0.9898</b></td><td align="center"><b>0.9433</b></td></tr>
+    <tr><td><b>B – Weighted Average</b></td><td align="center">0.8728</td><td align="center"><b>0.9898</b></td><td align="center"><b>0.9433</b></td></tr>
+    <tr><td><b>C – Per-Class Weighted</b></td><td align="center">0.8805</td><td align="center"><b>0.9898</b></td><td align="center">0.9431</td></tr>
+    <tr><td><b>D – Stacking (Proposed)</b></td><td align="center"><b>0.8845</b></td><td align="center">0.9888</td><td align="center">0.9398</td></tr>
+  </tbody>
+</table>
+
